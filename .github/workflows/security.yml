@@ -26,8 +26,8 @@ jobs:
       - name: Run Checkmarx One Scan
         uses: Checkmarx/ast-github-action@2.3.36
         with:
-          base_uri: "https://ast.checkmarx.net"
-          cx_tenant: ${{ secrets.CX_TENANT }}
+          base_uri: "https://eu.ast.checkmarx.net"
+          cx_tenant: "paranoihack-nfr"
           cx_client_id: ${{ secrets.CX_CLIENT_ID }}
           cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
           project_name: ${{ github.repository }}
